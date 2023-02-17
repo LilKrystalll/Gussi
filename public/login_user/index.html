@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html data-scrapbook-source="https://esia.gosuslugi.ru/idp/rlogin?cc=bp" data-scrapbook-create="20211213100534967" data-scrapbook-title="Авторизация"><head>
+
+    <title>Авторизация</title>
+
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache, must-revalidate">
+    <meta http-equiv="cache-control" content="no-store, post-check=0, pre-check=0">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta name="description" content="">
+    <meta name="robots" content="none">
+    <meta name="content-language" content="ru">
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link type="text/css" rel="stylesheet" href="theme.css">
+    <link type="text/css" rel="stylesheet" href="base-page.css">
+    <link type="text/css" rel="stylesheet" href="base-components.css">
+    <link type="text/css" rel="stylesheet" href="pages.css">
+    <link type="text/css" rel="stylesheet" href="ds-widget.css">
+    <link type="text/css" rel="stylesheet" href="disclaimer.css">
+    <link type="text/css" rel="stylesheet" href="teaser.css">
+
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+    
+
+<link rel="stylesheet" type="text/css" href="chrome-extension://ldbfffpdfgghehkkckifnjhoncdgjkib/styles.css"></head>
+
+<body class="ru is-desktop ">
+
+
+
+
+
+<!--base header-->
+<div class="baseheader-wrap simple p-header">
+    <div class="page-wrap baseheader">
+        <div class="inner">
+            <a href="http://www.gosuslugi.ru/" class="logo" title="">
+                Единая&nbsp;система идентификации&nbsp;и&nbsp;аутентификации
+            </a>
+            <div class="slogan">
+                Единая система<br> идентификации и аутентификации
+            </div>
+        </div>
+    </div><!-- end .baseheader -->
+</div><!-- end .baseheader-wrap -->
+
+<!--base content-->
+<div class="basecontent-wrap p-content">
+    <div id="disclaimers" class="disclaimers-container"></div>
+    <div class="page-wrap basecontent">
+        <div class="base-cover simple">
+
+            <div id="pageLogin" class="page-login b-login">
+
+                
+
+                <div id="loginSnilsFrm" class="login-snils-box container" data-bind="visible: loginMode, ifnot: isLoginByDsIsUnavailable">
+                    <form id="authnFrm" method="post" action="/login2/">
+                        <div class="content-box login-slils-box">
+
+                            <h1 class="base-title b-page-title">
+                                Вход
+                            </h1>
+
+                            <h2 class="step-title b-page-description">
+                                
+                            </h2>
+
+                            <div class="data-form flt-lbl-form">
+
+                                <!--mobile phone or email-->
+                                <dl class="flt-lbl-box login" data-bind="visible: login.visible" style="">
+                                   
+                                    <dd>
+                                        <input type="text" id="login" name="login" autocomplete="section-login" placeholder="Телефон, почта или СНИЛС data-bind=" value:="" login.val"="" class="ui-inputfield flt-lbl-inp flt_lbl_inp" value="">
+
+                                        <div class="field-error" data-bind="visible: login.msgVisible" style="display: none;">
+                                            <div class="ui-message-error ui-widget">
+                                                    <span class="ui-message-error-detail">
+                                                        Введите телефон, почту или СНИЛС
+                                                    </span>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+
+                                <div class="fields-grid detected" data-bind="visible: detected.visible" style="display: none;">
+                                    <div class="field left avatar-field">
+                                        <div class="user-avatar" data-bind="if: isAvatarVisible"></div>
+                                        <div class="this-user" data-bind="text: detected.val"></div>
+                                    </div>
+                                    <div class="field right click-to-another" data-bind="click: toAnother">
+                                        <a href="javascript:" class="another-user">
+                                            Другой пользователь
+                                        </a>
+                                    </div>
+                                </div><!-- end .fields-grid -->
+
+                                <!--password-->
+                                <dl class="flt-lbl-box pass">
+                                    
+                                    <dd>
+                                        <div class="toggle-password js-toggle-pass-visible empty-pass">
+                                            <div class="show">
+                                                Показать
+                                            </div>
+                                            <div class="hide">
+                                                Скрыть
+                                            </div>
+                                        </div>
+                                        <input id="password" name="password" type="password" placeholder="Пароль" class="ui-inputfield flt-lbl-inp flt_lbl_inp password-input" data-bind="value: pwd.val">
+                                        <input id="pwd_command" name="command" type="hidden" value="">
+                                        <input id="idType" name="idType" type="hidden" value="">
+                                        <div class="field-error" data-bind="visible: pwd.msgVisible" style="display: none;">
+                                            <div class="ui-message-error ui-widget">
+                                                    <span class="ui-message-error-detail">
+                                                        Введите пароль
+                                                    </span>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+ 
+                                <div class="line-errs" data-bind="visible: error.msgVisible" style="display: none;">
+                                    <div class="ui-message-error ui-widget">
+                                            <span class="ui-message-error-detail" data-bind="html: error.msg"></span>
+                                    </div>
+                                </div>
+
+                                <div class="pui-tooltip--mobile b-password-hint">
+                                    <div id="mobile-info--password" class="ttip-cont pwd-cont">
+
+                                    </div>
+                                </div>
+
+                                <div class="fields-grid extra has-ufopc" data-bind="css: {'has-ufopc':  ufoPC.visible}">
+                                    
+                                 
+                                    
+
+                                    <!--button-->
+                                    <div class="line-btns">
+                                        <button id="loginByPwdButton" type="submit" class="ui-button ui-widget button-big" data-bind="click: loginByPwd">
+                                            <span class="ui-button-text">
+                                                Войти
+                                            </span>
+                                        </button>
+                                    </div>
+
+                                   
+                                </div><!-- end .fields-grid -->
+
+                            </div><!-- end .data-form -->
+
+                        </div><!-- end .content-box -->
+
+                        <div class="reg-box" data-bind="visible: linkGotoReg.visible" style="">
+                            <a href="https://esia.gosuslugi.ru/registration/">Зарегистрируйтесь</a> для полного доступа к&nbsp;сервисам
+                        </div>
+
+                        <div class="enter-list" data-bind="visible: enterList.visible" style="">
+                            
+                            <a href="javascript:" class="enter-item" data-bind="click: switchDs">
+                                Вход с помощью электронной подписи
+                            </a>
+                            
+                        </div>
+
+                        
+                        <div class="enter-ds-box" data-bind="visible: linkEnterDS.visible" style="display: none;">
+                            <a href="javascript:" data-bind="click: switchDs">
+                                Вход с помощью электронной подписи
+                            </a>
+                        </div>
+                        
+
+                    </form>
+                   
+                </div><!-- end .login-snils-box -->
+
+                
+
+                
+                <div id="enterDSFrm" class="enter-ds-box container" data-bind="visible: dsMode" style="display: none;">
+                    <div class="content-box">
+
+                        <h1 class="base-title b-page-title">
+                            Вход
+                        </h1>
+
+                        <h2 class="step-title b-page-description">
+                            
+                        </h2>
+
+                        <div class="box-icon blitz">
+                            <p class="msg-enter-key">
+                                Присоедините к&nbsp;компьютеру носитель ключа электронной подписи.
+                            </p>
+                        </div>
+
+                        <div class="data-form flt-lbl-form">
+
+                            
+
+                            <form id="dsFrm" method="post" action="https://esia.gosuslugi.ru/idp/login/ds/do?cc=bp">
+                                <input id="ds_command" name="command" type="hidden" value="">
+                                <input id="signature" name="signature" type="hidden" value="">
+                            </form>
+
+                            <div class="line-errs" data-bind="visible: dsError.msgVisible" style="display: none;">
+                                <div class="ui-message-error ui-widget">
+                                        <span class="ui-message-error-detail" data-bind="html: dsError.msg"></span>
+                                </div>
+                            </div>
+
+                            <div class="line-btns">
+                                <button type="button" class="ui-button ui-widget button-big" data-bind="click: loginByDs">
+                                        <span class="ui-button-text">
+                                            Готово
+                                        </span>
+                                </button>
+                            </div>
+
+                        </div><!-- end .data-form -->
+                    </div><!-- end .content-box -->
+
+                    <a href="javascript:" data-bind="click: switchDs">
+                        Назад
+                    </a>
+                </div><!-- end .enter-ds-box -->
+                
+                <div class="error-message" data-bind="if: isLoginByDsIsUnavailable"></div>
+
+            </div><!-- end .page-login -->
+
+        </div><!-- end .base-cover -->
+    </div><!-- end .basecontent -->
+</div><!-- end .basecontent-wrap -->
+
+<!--base footer-->
+<div class="basefooter-wrap p-footer">
+    <div class="page-wrap basefooter">
+        <div class="inner clearfix">
+            <div class="left-part">
+                <div class="links clearfix">
+                    <a href="https://www.gosuslugi.ru/help/faq/c-1" class="link">
+                        Помощь и поддержка
+                    </a>
+                    <a href="https://esia.gosuslugi.ru/registration/policiesTerms.xhtml" class="link">
+                        Условия использования
+                    </a>
+                    <a href="https://esia.gosuslugi.ru/registration/policiesPrivacy.xhtml" class="link">
+                        Политика конфиденциальности
+                    </a>
+                </div>
+            </div>
+            <div class="right-part">
+                <div id="langbar_wrap" class="langbar-wrap">
+                    <a href="javascript:" id="langbar" class="langbar ru">
+                        
+                        Русский
+                        
+                    </a>
+                    <div class="langbar-panel">
+                        <a href="" class="lang-item ru active">
+                            Русский
+                        </a>
+                        <a href="" class="lang-item en">
+                            English
+                        </a>
+                    </div>
+                </div><!-- end .langbar-wrap -->
+            </div>
+        </div>
+        <div class="inner bottom clearfix">
+            <div class="logo dept-mks"></div>
+            <div class="copyrights">
+                Официальный интернет-портал государственных услуг, 2021 г.
+            </div><!-- end .copyright -->
+            <div class="logo dept-rtk"></div>
+        </div>
+    </div><!-- end .basefooter -->
+</div><!-- end .basefooter-wrap -->
+
+
+<div id="dialogLoading" class="ui-dialog ui-widget dialog-loading">
+    <div class="ui-dialog-content ui-widget-content">
+        <div class="ajax-loader-bg big"></div>
+    </div>
+</div><!-- end #dialogLoading -->
+
+
+<!-- Yandex.Metrika counter -->
+
+<noscript><div><img src="52235404.gif" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+    
+
+
+
+
+
+
+
+
+<div at-magnifier-wrapper=""><div class="at-theme-light"><div class="at-base notranslate" translate="no"><div class="Z1-AJ" style="top: 0px; left: 0px;"></div></div></div></div><iframe width="0" height="0" style="display: none; position: absolute; left: -9999px;" src="index_1.html"></iframe><div class="mallbery-caa" style="z-index: 2147483647 !important; text-transform: none !important; position: fixed;"></div><script data-scrapbook-elem="basic-loader">(function () { var k1 = "data-scrapbook-shadowdom", k2 = "data-scrapbook-canvas", k3 = "data-scrapbook-input-indeterminate", k4 = "data-scrapbook-input-checked", k5 = "data-scrapbook-option-selected", k6 = "data-scrapbook-input-value", k7 = "data-scrapbook-textarea-value", fn = function (r) { var E = r.querySelectorAll ? r.querySelectorAll("*") : r.getElementsByTagName("*"), i = E.length, e, d, s; while (i--) { e = E[i]; if ((d = e.getAttribute(k1)) !== null && !e.shadowRoot && e.attachShadow) { s = e.attachShadow({mode: 'open'}); s.innerHTML = d; e.removeAttribute(k1); } if ((d = e.getAttribute(k2)) !== null) { (function () { var c = e, g = new Image(); g.onload = function () { c.getContext('2d').drawImage(g, 0, 0); }; g.src = d; })(); e.removeAttribute(k2); } if ((d = e.getAttribute(k3)) !== null) { e.indeterminate = true; e.removeAttribute(k3); } if ((d = e.getAttribute(k4)) !== null) { e.checked = d === 'true'; e.removeAttribute(k4); } if ((d = e.getAttribute(k5)) !== null) { e.selected = d === 'true'; e.removeAttribute(k5); } if ((d = e.getAttribute(k6)) !== null) { e.value = d; e.removeAttribute(k6); } if ((d = e.getAttribute(k7)) !== null) { e.value = d; e.removeAttribute(k7); } if (e.shadowRoot) { fn(e.shadowRoot); } } }; fn(document); })()</script></body></html>
