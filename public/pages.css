@@ -1,0 +1,447 @@
+/*              Infomat             */
+.kw-object {
+    position: absolute;
+    height: 0;
+    width: 0;
+}
+
+/*              overlay             */
+.ui-widget-overlay {
+    z-index: 9998;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100% !important;
+    width: 100%;
+}
+
+/*              dialog              */
+.ui-dialog.dialog-loading {
+    z-index: 99999;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    display: none;
+    margin: -80px 0 0 -80px;
+}
+
+
+/*
+                Page - login
+*/
+/*              only-ds-box             */
+.page-login .only-ds-box .msg-no-ds p:first-of-type {
+    margin-bottom: 10px;
+}
+
+/*              login-snils-box             */
+/* tooltip */
+.pui-tooltip .ttip-cont.enter-cont {
+    max-width: 250px;
+    min-height: 34px;
+}
+.login-snils-box,
+.enter-ds-box {
+    display: inline-block;
+    width: 374px;
+}
+
+.p-content .basecontent .base-cover.simple .enter-ds-box .content-box {
+    padding-bottom: 40px;
+}
+
+.pui-tooltip .ttip-cont.ttip-lt.enter-cont {
+    margin: -65px 0 0 0;
+}
+body.en .pui-tooltip .ttip-cont.enter-cont {
+    line-height: 34px;
+    max-width: 300px;
+}
+body.de .pui-tooltip .ttip-cont.enter-cont,
+body.fr .pui-tooltip .ttip-cont.enter-cont {
+    line-height: 34px;
+    max-width: 340px;
+}
+/* detected */
+.page-login .login-snils-box .detected {
+    padding-bottom: 32px;
+}
+.page-login .login-snils-box .fields-grid.detected .field {
+    width: 180px;
+    margin-top: 5px;
+    padding-bottom: 15px;
+    white-space: nowrap;
+}
+.page-login .login-snils-box .detected .user-avatar {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 70px;
+    height: 70px;
+    border-radius: 30px;
+    background-image: url("person.svg");
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+}
+.content-box .fields-grid.detected .field.right.click-to-another {
+    margin: -49px 0 0 100px;
+    text-align: left;
+}
+.page-login .login-snils-box .detected .this-user {
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+    margin-top: -31px;
+    margin-left: 0;
+    padding-right: 70px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left;
+    text-indent: 27px;
+    line-height: 17px;
+    font-size: 14px;
+    color: #010101;
+    font-weight: bold;
+}
+.content-box .fields-grid.detected .field.left.avatar-field {
+    width: 100%;
+}
+.page-login .login-snils-box .detected .another-user {
+    line-height: 17px;
+}
+/* ufo-pc & recovery  */
+.page-login .login-snils-box .extra {
+    padding-top: 15px;
+}
+.page-login .login-snils-box .fields-grid.extra .field {
+    padding-top: 19px;
+    padding-bottom: 3px;
+}
+.page-login .login-snils-box .extra .ufopc .check-list {
+    display: inline-block;
+}
+.page-login .login-snils-box .extra .ufopc .check-list label {
+    margin-bottom: 0;
+}
+.page-login .login-snils-box .login-slils-box .fields-grid.extra .field.recovery.right {
+    display: table;
+    float: none;
+    width: 100%;
+    padding-top: 30px;
+    text-align: center;
+}
+.page-login .login-snils-box .extra .recovery .goto-recovery {
+    line-height: 20px;
+}
+/* link goto-reg */
+.page-login .login-snils-box .reg-box {
+    padding-bottom: 30px;
+}
+/* enter by */
+.page-login .login-snils-box .enter-list {
+    font-size: 14px;
+    line-height: 18px;
+}
+.page-login .login-snils-box .enter-list .enter-text {
+    color: #272727;
+    margin-bottom: 5px;
+}
+.page-login .login-snils-box .enter-list .enter-item {
+    margin: 0 7px;
+}
+
+/*              enter-ds-box             */
+.page-login .enter-ds-box .msg-enter-key {
+    margin-bottom: 30px;
+}
+.page-login .enter-ds-box .msg-sim-ds {
+    margin-bottom: 30px;
+}
+
+/* qtip */
+.page-login .data-form .flt_qtip {
+    display: none;
+}
+.page-login .data-form .field-qtip .text {
+    position: relative;
+    color: #3f87c3;
+    display: block;
+    font-size: 12px;
+    margin: 1px 10px 3px 19px;
+    padding-top: 1px;
+}
+
+
+/*
+                Page - otp
+*/
+.page-otp .code-expired {
+    color: #e53c54;
+    padding-bottom: 25px;
+}
+/*
+                Page - smart sso
+*/
+.page-smart-sso .msg-sysname {
+    padding-bottom: 25px;
+}
+.page-smart-sso .list-base {
+    padding-bottom: 25px;
+}
+.page-smart-sso p.list-title {
+    color: #272727;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    padding: 0 0 8px 20px;
+    text-align: left;
+}
+.page-smart-sso .link-action {
+    margin: 0 12px;
+}
+
+
+/*
+                Page - cttInfo
+*/
+.page-cttinfo .msg-ctt p:first-of-type {
+    margin-bottom: 10px;
+}
+.page-cttinfo .action-ctt a {
+    display: inline-block;
+}
+.page-cttinfo .action-ctt a:first-of-type {
+    margin-bottom: 15px;
+}
+
+
+/*
+                Page - role
+*/
+.page-role .role-error {
+    display: none;
+}
+
+
+/*
+                Page - error
+*/
+.page-error .error-item {
+    padding-bottom: 15px;
+}
+
+
+/*
+                @media
+*/
+
+/*              320px - default             */
+.page-login .login-snils-box .enter-list .enter-text {
+    display: block;
+}
+
+/*              433px             */
+@media screen and (min-width: 433px) {
+    .content-box .fields-grid.detected .field,
+    body.ru .content-box .fields-grid.extra.has-ufopc .field {
+        width: 274px;
+    }
+    .content-box .fields-grid.detected .field.left,
+    body.ru .content-box .fields-grid.extra.has-ufopc .field.left {
+        text-align: left;
+    }
+    .content-box .fields-grid.detected .field.right,
+    body.ru .content-box .fields-grid.extra.has-ufopc .field.right {
+        float: right;
+        text-align: right;
+    }
+    .page-login .login-snils-box .enter-list .enter-text {
+        display: inline;
+    }
+    .ufoPC-checkbox {
+        white-space: nowrap;
+    }
+}
+/*              end @media              */
+
+/*              advice                  */
+.advice.info {
+    /*background: #B8DFFF;*/
+    color: #434343;
+    font-family: 'EtelkaThin', 'Helvetica Neue', helvetica, arial, sans-serif;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.advice div {
+    font-family: 'EtelkaMedium', 'Helvetica Neue', helvetica, arial, sans-serif;
+    padding-bottom: 10px;
+}
+.advice button.close {
+    position: relative;
+    color: inherit;
+    float: right;
+    background: 0 0;
+    border: 0;
+    cursor: pointer;
+}
+/*              end advice              */
+.b-login {
+    margin: 15px 0 0 0;
+}
+
+.basecontent .base-cover.simple .b-login h1.base-title {
+    margin-top: 0;
+}
+
+.b-login .container {
+    width: 100%;
+    max-width: 368px;
+}
+.b-login .header-box {
+    display: -ms-flex;
+    display: flex;
+    margin: 0 0 40px 0;
+    border-bottom: 1px solid #cdd1d4;
+}
+.b-login .form-tab {
+    flex-grow: 1;
+    text-align: center;
+}
+.b-login .form-tab a {
+    display: block;
+    border-bottom: 4px solid transparent;
+    padding: 0 0 4px;
+    font: 700 14px/24px 'Helvetica Neue', helvetica, arial, sans-serif;
+    text-decoration: none;
+    color: #005faf;
+}
+.b-login .form-tab.active a {
+    border-bottom: 4px solid #005faf;
+    color: #000000;
+}
+.b-login .data-form.flt-lbl-form dl {
+    margin: 5px 0 17px;
+}
+.b-login .data-form.flt-lbl-form dl.flt-lbl-box dt,
+.b-login .data-form.flt-lbl-form dl.flt-lbl-box.flt-lbl-up dt {
+    left: 16px;
+}
+.b-login .data-form.flt-lbl-form dd input.ui-inputfield,
+.b-login .data-form.flt-lbl-form dl.flt-lbl-box.flt-lbl-up .flt-lbl-inp {
+    width: 100%;
+    height: 48px;
+    box-sizing: border-box;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.b-login .data-form.flt-lbl-form .line-btns .button-big {
+    width: 100%;
+    height: 48px;
+    margin-top: 16px;
+}
+.b-login .login-snils-box .fields-grid.extra,
+.b-login .login-snils-box .fields-grid.extra .field {
+    padding-top: 0;
+}
+.b-login .login-snils-box .fields-grid.extra .field {
+    margin-bottom: 20px;
+    text-align: left;
+}
+.b-login .login-snils-box input[type="checkbox"] + label {
+    padding-left: 28px;
+    background-size: 20px 20px;
+    background-position: 0 2px;
+}
+.b-login .login-snils-box .login-slils-box .fields-grid.extra .field.recovery.right {
+    padding-top: 17px;
+    margin-bottom: 0;
+}
+.b-login .login-snils-box .extra .recovery .goto-recovery {
+    font-size: 14px;
+}
+.b-login .login-snils-box .reg-box {
+    padding-bottom: 12px;
+    font-size: 14px;
+}
+.b-login .login-snils-box .detected .this-user {
+    margin-top: -26px;
+    margin-bottom: 0;
+    text-indent: 20px;
+    font-size: 16px;
+}
+.b-login .fields-grid.detected .field.right.click-to-another {
+    margin: -42px 0 0 100px;
+}
+.b-login .login-snils-box .detected {
+    padding-bottom: 24px;
+}
+.b-login .data-form.flt-lbl-form dd .field-error .ui-message-error {
+    padding: 0;
+}
+.page-login .data-form .field-qtip .text {
+    font-size: 13px;
+    color: #666666;
+    margin: 4px 10px 3px 0;
+}
+@media screen and (max-width: 433px) {
+    .b-login .header-box {
+        margin: 0 0 30px 0;
+    }
+    .b-login .form-tab a {
+        font-size: 16px;
+    }
+    .b-login .login-snils-box .extra .recovery .goto-recovery {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .b-login .login-snils-box .reg-box {
+        width: 100%;
+        max-width: 240px;
+        margin: 0 auto;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .b-login .data-form.flt-lbl-form dl.flt-lbl-box dt {
+        top: 15px;
+        font-size: 16px;
+    }
+    .b-login .data-form.flt-lbl-form dl.flt-lbl-box.flt-lbl-up dt {
+        top: 3px;
+        font-size: 10px;
+    }
+    .b-login .login-snils-box input[type="checkbox"] + label {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .b-login .login-snils-box .detected {
+        padding-bottom: 14px;
+    }
+}
+
+.is-app .p-header,
+.is-app .p-footer,
+.is-app .b-login .b-page-title,
+.is-app .b-login .b-page-description {
+    display: none;
+}
+
+.is-med-infomat .p-footer,
+.is-med-infomat .extra .ufopc,
+.is-med-infomat .extra .recovery,
+.is-med-infomat .reg-box,
+.is-med-infomat .enter-ds-box,
+.is-med-infomat .enter-list {
+    display: none !important;
+}
+
+.is-app .b-login {
+    margin: 0;
+}
+
+.is-mobile .basecontent .base-cover.simple .content-box {
+    padding: 24px 24px 32px;
+    margin: 0 0 24px !important;
+    box-shadow: none;
+}

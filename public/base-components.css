@@ -1,0 +1,200 @@
+/*  web-resources / Flt */
+/*---------------------------------------------------------------------------------*/
+/*---------------------------PrimeFaces components---------------------------------*/
+/*---------------------------------------------------------------------------------*/
+
+/*
+                <p:tabView/>
+*/
+/*              end <p:tabView/>                */
+
+
+/*
+                <p:commandButton/>
+                <p:button/>
+*/
+/*              default              */
+.ui-button.ui-widget {
+    border: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.ui-button.ui-widget::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+.ui-button.ui-widget .ui-button-text {
+    white-space: nowrap;
+}
+/*              end Buttons             */
+
+
+/*
+                <p:inputText/>
+                <p:inputTextarea/>
+*/
+/*              end Input & Textarea              */
+
+
+/*
+                <p:watermark/>
+*/
+/*              end <p:watermark/>              */
+
+
+/*
+                <p:selectOneMenu/>
+*/
+/*              end <p:selectOneMenu/>              */
+
+
+/*
+                <p:selectOneRadio/>
+                <p:selectBooleanCheckbox/>
+                <p:selectManyCheckbox/>
+*/
+/*              end Radio & Checkbox             */
+
+
+/*
+                <p:dataTable/>
+*/
+/*              Pager               */
+/*              end Pager               */
+/*              end <p:dataTable/>              */
+
+
+/*
+                <p:dialog/>
+*/
+.ui-dialog.ui-widget {
+    box-shadow: none;
+}
+/* buttons */
+.ui-dialog.ui-widget .ui-dialog-buttonpane,
+.ui-dialog-buttonpane,
+.ui-dialog.ui-widget .ui-dialog-content .buttons-group.dialog {
+    border: none;
+    clear: both;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+}
+.ui-dialog.ui-widget .ui-dialog-buttonpane button,
+.ui-dialog-buttonpane button,
+.ui-dialog.ui-widget .buttons-group.dialog button {
+    margin: 0;
+}
+.ui-dialog.ui-widget .ui-dialog-buttonpane button.left,
+.ui-dialog-buttonpane button.left,
+.ui-dialog.ui-widget .buttons-group.dialog button.left {
+    float: left;
+    margin-left: 0;
+}
+.ui-dialog.ui-widget .ui-dialog-buttonpane button.right,
+.ui-dialog-buttonpane button.right,
+.ui-dialog.ui-widget .buttons-group.dialog button.right {
+    float: right;
+    margin-right: 0;
+}
+/* title */
+.ui-dialog.ui-widget .ui-dialog-titlebar {
+    position: relative;
+}
+.ui-dialog.ui-widget .ui-dialog-title {
+    float: none;
+    margin: 0;
+    position: relative;
+}
+.ui-dialog.ui-widget .ui-dialog-titlebar .ui-dialog-titlebar-close {
+    position: absolute;
+    display: block;
+    padding: 0;
+    z-index: 1005;
+}
+.ui-dialog.ui-widget .ui-dialog-titlebar .ui-dialog-titlebar-close .ui-icon.ui-icon-closethick {
+    display: none;
+}
+/*              end <p:dialog/>              */
+
+
+/*
+                <p:confirmDialog/>
+*/
+/*              end <p:confirmDialog/>              */
+
+
+/*
+                <p:autoComplete/>
+*/
+/*              end <p:autoComplete/>               */
+
+
+/*
+                <p:message/>
+*/
+/*              end <p:message/>               */
+
+
+/*              OLD             */
+
+/*
+                <p:calendar/>
+*/
+/*              end <p:calendar/>               */
+
+
+/*
+                <p:messages/>
+*/
+/*              end <p:messages/>               */
+
+
+/*
+                <p:growl/>
+*/
+/*              end <p:growl/>              */
+
+/*              end OLD             */
+
+
+
+
+/*---------------------------------------------------------------------------------*/
+/*---------------------------PrimeFaces Extensions components----------------------*/
+/*---------------------------------------------------------------------------------*/
+
+/*
+                <pe:tooltip/>
+*/
+/*              end <pe:tooltip/>                */
+
+
+
+
+/*---------------------------------------------------------------------------------*/
+/*---------------------------Prime UI components-----------------------------------*/
+/*---------------------------------------------------------------------------------*/
+
+/*
+                .pui-tooltip
+*/
+.pui-tooltip {
+    position: absolute;
+    display: none;
+}
+/*              end .pui-tooltip                */
+
+
+/*
+                .pui-autocomplete-panel
+*/
+/*              end .pui-autocomplete-panel             */
+
+
+
+/*---------------------------------------------------------------------------------*/
+/*---------------------------ESIA components---------------------------------------*/
+/*---------------------------------------------------------------------------------*/
+
+/**/

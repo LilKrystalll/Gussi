@@ -1,0 +1,92 @@
+/* common */
+.dialog-edsdlg {
+    width: 724px !important;
+}
+.dialog-edsdlg .eds-message p {
+    padding-bottom: 10px;
+}
+.dialog-edsdlg .eds-message ol {
+    margin-left: 20px;
+}
+.dialog-edsdlg .eds-message ol li {
+    padding-bottom: 10px;
+}
+.dialog-edsdlg .eds-info .line {
+    display: block;
+    /*font-size: 13px;*/
+    /*line-height: normal;*/
+    padding-bottom: 8px;
+}
+.dialog-edsdlg .eds-info .fio {
+    /*font-size: 14px;*/
+}
+.dialog-edsdlg .eds-info .label {
+    color: #666;
+}
+/* select */
+.dialog-edsdlg .eds-select-dlg .eds-process {
+    padding-bottom: 20px;
+    text-align: center;
+}
+.dialog-edsdlg .eds-select-dlg .eds-process .descr {
+    padding-bottom: 20px;
+}
+.dialog-edsdlg .eds-select-dlg .eds-process .wait {
+    padding-bottom: 60px;
+}
+.dialog-edsdlg .eds-select-dlg .eds-process .ajax-loader-bg.middle {
+    background-position: center bottom;
+}
+.dialog-edsdlg .eds-select-dlg .datalist-wrap .datalist-block .datalist-item .line {
+    display: block;
+    font-size: 13px;
+    /*line-height: normal;*/
+    padding-bottom: 4px;
+}
+.dialog-edsdlg .eds-select-dlg .datalist-wrap .datalist-block .datalist-item .fio {
+    padding-bottom: 6px;
+}
+.dialog-edsdlg .eds-select-dlg .datalist-wrap .datalist-block .datalist-item .line .label {
+    color: #666;
+}
+.dialog-edsdlg .eds-select-dlg .eds-message.empty {
+    text-align: center;
+}
+/* pincode */
+.dialog-edsdlg .eds-message .eds-info-pincode {
+    padding-bottom: 20px;
+}
+.dialog-edsdlg .data-form-pincode.horizontal dt {
+    /*text-align: left;*/
+    /*width: 60px;*/
+}
+.dialog-edsdlg .data-form-pincode.horizontal dd {
+    /*margin-left: 80px;*/
+}
+.dialog-edsdlg .data-form-pincode dd input.ui-inputfield {
+    /*width: 120px;*/
+}
+.dialog-edsdlg .data-form-pincode .error-pin {
+    position: absolute;
+    bottom: -18px;
+    left: 175px;
+    font-size: 13px;
+    color: #e00024;
+}
+/* sim get */
+.dialog-edsdlg .sim-ds-get-dlg .ajax-loader-bg.middle {
+    background-position: center center;
+    height: 40px;
+    padding: 20px 0;
+}
+/* not found */
+.dialog-edsdlg .eds-message.not-found {
+    font-size: 13px;
+}
+.dialog-edsdlg .eds-message.not-found .msg-title {
+    font-weight: 700;
+}
+/* old version */
+.dialog-edsdlg .eds-message.old-version {
+    font-size: 13px;
+}

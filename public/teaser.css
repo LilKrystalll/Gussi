@@ -1,0 +1,53 @@
+.login-snils-box {
+    position: relative;
+}
+
+.teaser {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: 20px;
+    width: 224px;
+}
+
+.teaser .icon-wrapper {
+    margin: 0 0 16px;
+}
+
+.teaser .icon {
+    width: 48px;
+    height: 48px;
+}
+
+.teaser .banner {
+    position: relative;
+    border: 1px solid #005faf;
+    background: #f8fcff;
+    border-radius: 4px;
+    text-align: left;
+    padding: 16px 16px 24px 32px;
+    color: #3b3b3b;
+    line-height: 24px;
+}
+
+.teaser .banner a {
+    letter-spacing: -0.02em;
+}
+
+.teaser .close-teaser {
+    right: 16px;
+    top: 16px;
+    width: 20px;
+    height: 20px;
+    background: url("") 100% no-repeat;
+    position: absolute;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 433px) {
+    .teaser {
+        position: static;
+        width: auto;
+        margin: 20px 24px 0 24px;
+    }
+}
